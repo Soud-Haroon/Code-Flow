@@ -1,5 +1,4 @@
-let g_client_id =
-  "865031176566-ngpu8ter8qkaqqp01pftlebkbcucv3l8.apps.googleusercontent.com";
+let g_client_id = "";
 
 googleLogin.addEventListener("click", () => {
   // change your redirect uri here
