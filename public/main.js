@@ -2,7 +2,7 @@ let g_client_id = "";
 
 googleLogin.addEventListener("click", () => {
   // change your redirect uri here
-  let redirect_uri = `http://localhost:5500/google/dashboard.html`;
+  let redirect_uri = `https://soudharoon.wmdd4950.com/Code-Flow//google/dashboard.html`;
 
   let auth_url = `https://accounts.google.com/o/oauth2/v2/auth`;
   let scopes = ["email", "profile", "openid"];
