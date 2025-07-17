@@ -6,13 +6,9 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const myId =
-  "865031176566-ngpu8ter8qkaqqp01pftlebkbcucv3l8.apps.googleusercontent.com";
-
-// client_id: process.env.APP_ID,
 async function exchangeCodeForToken(code, uri) {
   const data = {
-    client_id: myId,
+    client_id: process.env.APP_ID,
     client_secret: process.env.APP_SECRET,
     code: code,
     redirect_uri: uri,
